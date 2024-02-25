@@ -1,5 +1,4 @@
 from fractions import Fraction
-# i havent tested if fractions actually work or not so do it yourself
 
 def average_calculator(numbers):
     fractions_list = [Fraction(str(number)) for number in numbers]
