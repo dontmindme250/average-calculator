@@ -4,4 +4,4 @@ a average calculator made in python, it supports whole numbers, decimals and fra
 
 ## usage
 
-simply run the `main.py` file to use the calculator
+simply run the `average-calculator.py` file to use the calculator
