@@ -13,7 +13,7 @@ def average_calculator(numbers):
     return float(average)
 
 def main():
-    print("Note: For decimal numbers, use a dot (.) as a separator. For fractions, use a slash (/).")
+    print("Note: For decimal numbers, use a dot (.) as a separator. For fractions, use a slash (/), use (-) before a number to make it negative.")
     while True:
         user_input = input("Enter numbers separated by commas or type 'exit' to quit: ").strip()
 
@@ -26,7 +26,7 @@ def main():
             numbers = [num.strip() for num in user_input.split(',') if num.strip()]
 
             if not all(num.replace('.', '', 1).replace('/', '', 1).replace('-', '', 1).isdigit() for num in numbers):
-                raise ValueError("All inputs must be numbers, decimals, or fractions.")
+                raise ValueError("All inputs must be numbers, decimals, fractions or negative numbers.")
 
             print("Average:", average_calculator(numbers))
         except Exception as e:
